@@ -1420,7 +1420,7 @@
 		}
 
 		.\31 2u\28xsmall\29, .\31 2u\24\28xsmall\29 {
-			width: 100%;
+			width: 250%;
 			clear:none;
 			margin-left: 0;
 		}
@@ -2010,7 +2010,7 @@
 		select:focus,
 		textarea:focus {
 			border-color: #4bae77;
-			box-shadow: 0 0 0 1px #4bae77;
+			box-shadow: 0 0 0 3px #b881ff;
 		}
 
 	.select-wrapper {
@@ -2865,7 +2865,7 @@
 		}
 
 		#navPanel a:not(.close) {
-			border-top: solid 1px #000000;
+			/*border-top: solid 1px #000000;*/
 			color: #000000;
 			font-weight: 600;
 			display: block;
@@ -2892,7 +2892,7 @@
 			height: 4em;
 			padding-right: 1.25em;
 			position: absolute;
-			right: 0;
+			left: 0;
 			text-align: right;
 			top: 0;
 			vertical-align: middle;
