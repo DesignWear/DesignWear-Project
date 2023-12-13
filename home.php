@@ -1,3 +1,25 @@
+<?php
+    session_start();
+    include_once('config.php');
+    // print_r($_SESSION);
+    if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true))
+    {
+        unset($_SESSION['email']);
+        unset($_SESSION['senha']);
+        header('Location: login.php');
+    }
+    $logado = $_SESSION['email'];
+    if(!empty($_GET['search']))
+    {
+        $data = $_GET['search'];
+        $sql = "SELECT * FROM professor WHERE idprofessor LIKE '%$data%' or nome LIKE '%$data%' or email LIKE '%$data%' ORDER BY idprofessor DESC";
+    }
+    else
+    {
+        $sql = "SELECT * FROM professor ORDER BY idprofessor DESC";
+    }
+    $result = $conexao->query($sql);
+?>
 <!DOCTYPE HTML>
 <!--
 	Projection by TEMPLATED
@@ -92,15 +114,16 @@
 							height: 5%" 
 							src="images/botão HOME.png" />
 						</a>
-						<a href="notas.html">
-							<img style="position: absolute;
+						<form action="notas.php" method="POST">
+                          
+						  <img style="position: absolute;
 							left: 120px; 
 							top: 710px;
 							width: 10%; 
 							height: 5%" 
-							src="images/botão NOTAS.png"  />
-						</a>
-
+							src="images/botão NOTAS.png"/>
+							<input class="inputSubmit" type="submit" name="button" value="Notas">
+						</form>
 					</li>
                 </ul>
 		<!-- Scripts -->

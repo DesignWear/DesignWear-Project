@@ -18,6 +18,16 @@
 		font: inherit;
 		vertical-align: baseline;
 	}
+	.inputSubmit{
+
+		border: none;
+		padding: 15px;
+		width: 100%;
+		border-radius: 10px;
+		color: rgb(0, 0, 0);
+		font-size: 15px;
+		
+	}
 .image.fit img {
 	width: 100%;
 	height: auto;
@@ -46,10 +56,6 @@
 	table {
 		border-collapse: collapse;
 		border-spacing: 0;
-	}
-
-	body {
-		-webkit-text-size-adjust: none;
 	}
 
 /* Box Model */
@@ -1855,10 +1861,11 @@
 		}
 
 	header p {
-		color: #bbb;
+		color: #000000;
 		position: relative;
 		margin: 0 0 1.5em 0;
 	}
+	
 
 	header h2 + p {
 		font-size: 1.25em;
@@ -2713,7 +2720,7 @@
 		}
 
 	#header {
-		color: #fff;
+		color: #000000;
 		cursor: default;
 		height: 3.25em;
 		left: 0;

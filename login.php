@@ -31,7 +31,9 @@
                         <img style="width: 400; height: 900px; 
                         left: 0px; 
                         top: 0px; 
-                        position: absolute" src="images/fundo.png" />
+                        position: absolute" src="images/fundo.png" 
+                        />
+                      
                         <div style="left: 54px; top: 650px; 
                         position: absolute; 
                         flex-direction: column;
@@ -47,26 +49,13 @@
                             font-weight: 400; 
                             word-wrap: break-word">
                           </div>
-                          <a 
-                            style="width: 259px; 
-                            height: 50px" 
-                            href="home.html" 
-                            class="button">
-                            ENTRAR
-                          </a>
-                          </div>
-                        <div style="left: 54px; top: 579px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-                          <div style="width: 76px; height: 23px; color: #8F8E8E; font-size: 18px; font-family: DM Sans; font-weight: 400; word-wrap: break-word">SENHA</div>
-                          <div class="6u 12u$(xsmall)">
-                            <input class="formInput" type="password" name="password" id="password"  placeholder="Senha" maxlength="20" required>
-                                
-                        </div>
-                        </div>
-                        <div style="left: 55px; top: 511px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-                          <div style="width: 76px; height: 23px; color: #8F8E8E; font-size: 18px; font-family: DM Sans; font-weight: 400; word-wrap: break-word">LOGIN</div>
-                          <div class="6u 12u$(xsmall)">
-                            <input class="formInput" type="text" name="demo-name" id="demo-name" value="" placeholder="Login" required>
-                                
+                        <form action="testLogin.php" method="POST">
+                          <input type="text" name="email" placeholder="Email">
+                          <br><br>
+                          <input type="password" name="senha" placeholder="Senha">
+                          <br><br>
+                          <input class="inputSubmit" type="submit" name="submit" value="Enviar">
+                        </form>
                         </div>
                         </div>
                       </div>
