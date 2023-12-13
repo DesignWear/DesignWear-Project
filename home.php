@@ -2,17 +2,17 @@
     session_start();
     include_once('config.php');
     // print_r($_SESSION);
-    if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true))
+    if((!isset($_SESSION['login']) == true) and (!isset($_SESSION['senha']) == true))
     {
-        unset($_SESSION['email']);
+        unset($_SESSION['login']);
         unset($_SESSION['senha']);
         header('Location: login.php');
     }
-    $logado = $_SESSION['email'];
+    $logado = $_SESSION['login'];
     if(!empty($_GET['search']))
     {
         $data = $_GET['search'];
-        $sql = "SELECT * FROM professor WHERE idprofessor LIKE '%$data%' or nome LIKE '%$data%' or email LIKE '%$data%' ORDER BY idprofessor DESC";
+        $sql = "SELECT * FROM professor WHERE idprofessor LIKE '%$data%' or nome LIKE '%$data%' or email LIKE '%$data%' or login LIKE '%$data%' ORDER BY idprofessor DESC";
     }
     else
     {
@@ -106,7 +106,7 @@
 						</section>
 				<ul class="icons">
 					<li>
-						<a href="home.html">
+						<a href="home.php">
 							<img style="position: absolute;
 							left: 35px; 
 							top: 710px;
@@ -122,7 +122,17 @@
 							width: 10%; 
 							height: 5%" 
 							src="images/botão NOTAS.png"/>
-							<input class="inputSubmit" type="submit" name="button" value="Notas">
+							<input 
+							style="
+							position: absolute;
+    						left: 114px;
+    						top: 702px;
+    						width: 14%;
+    						height: 7%;"
+							class="inputSubmit" 
+							type="submit" 
+							name="button" 
+							value="">
 						</form>
 					</li>
                 </ul>

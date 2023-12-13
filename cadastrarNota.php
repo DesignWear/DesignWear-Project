@@ -10,9 +10,9 @@
         $idprofessor = $_POST['idprofessor'];
 
         $result = mysqli_query($conexao, "INSERT INTO nota(matricula, id_atividade, nota, idprofessor)
-        VALUES('$matricula', '$id_atividade', '$nota ', '$idprofessor'");
+        VALUES('$matricula', '$id_atividade', '$nota ', '$idprofessor')");
 
-        header('Location: login.php');
+        header('Location: notas.php');
     }
 
 ?>
@@ -28,7 +28,7 @@
 <body>
     <a href="home.php">Voltar</a>
     <div class="box">
-        <form action="formulario.php" method="POST">
+        <form action="cadastrarNota.php" method="POST">
             <fieldset>
             <div class="inputBox">
                     <input type="text" name="matricula" id="matricula" class="inputUser" required>

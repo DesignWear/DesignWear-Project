@@ -50,10 +50,10 @@
                             word-wrap: break-word">
                           </div>
                         <form action="testLogin.php" method="POST">
-                          <input type="text" name="email" placeholder="Email">
-                          <br><br>
+                          <input type="text" name="login" placeholder="Login">
+                          <br>
                           <input type="password" name="senha" placeholder="Senha">
-                          <br><br>
+                          <br>
                           <input class="inputSubmit" type="submit" name="submit" value="Enviar">
                         </form>
                         </div>
