@@ -1,0 +1,18 @@
+body{
+    background-color: #8642de;
+}
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 10px;
+    border-radius: 10px;
+}
+a{
+    text-decoration: none;
+    color: rgb(13, 13, 13);
+    border: 3px solid #8642de;
+    border-radius: 10px;
+    padding: 1px;
+}

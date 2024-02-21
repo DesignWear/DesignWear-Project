@@ -12,11 +12,12 @@
          print_r('<br>');
          print_r('Senha: ' . $senha);
          
-        $sql = "SELECT * FROM aluno WHERE login = '$login' and senha = '$senha'";
+        $sql = "SELECT * FROM login WHERE login = '$login' and senha = '$senha'";
 
         $result = $conexao->query($sql);
 
          print_r($sql);
+         print_r('<br>');
          print_r($result);
 
         if(mysqli_num_rows($result) < 1)
@@ -30,7 +31,7 @@
             $_SESSION['login'] = $login;
             $_SESSION['senha'] = $senha;
             header('Location: home.php');
-        }
+        }/**/
     }
     else
     {
