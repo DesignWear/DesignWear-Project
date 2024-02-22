@@ -2,7 +2,7 @@
 
     if(isset($_POST['submit']))
     {
-        include_once('config.php');
+        include_once('./config.php');
 
         $matricula = $_POST['matricula'];
         $id_atividade = $_POST['id_atividade'];
@@ -12,7 +12,7 @@
         $result = mysqli_query($conexao, "INSERT INTO nota(matricula, id_atividade, nota, idprofessor)
         VALUES('$matricula', '$id_atividade', '$nota ', '$idprofessor')");
 
-        header('Location: notas.php');
+        header('Location: ./notas.php');
     }
 
 ?>
@@ -28,7 +28,7 @@
 <body>
     <a href="home.php">Voltar</a>
     <div class="box">
-        <form action="cadastrarNota.php" method="POST">
+        <form action="./cadastrarNota.php" method="POST">
             <fieldset>
             <div class="inputBox">
                     <input type="text" name="matricula" id="matricula" class="inputUser" required>

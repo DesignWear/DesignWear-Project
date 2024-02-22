@@ -4,7 +4,7 @@
     if(isset($_POST['submit']) && !empty($_POST['login']) && !empty($_POST['senha']))
     {
         // Acessa
-        include_once('config.php');
+        include_once('./config.php');
         $login = $_POST['login'];
         $senha = $_POST['senha'];
 
@@ -23,19 +23,19 @@
         {
             unset($_SESSION['login']);
             unset($_SESSION['senha']);
-            header('Location: login.php');
+            header('Location: ./login.php');
         }
         else
         {
             $_SESSION['login'] = $login;
             $_SESSION['senha'] = $senha;
-            header('Location: home.php');
+            header('Location: ./home.php');
         }
     }
     else
     {
         // Não acessa
-        header('Location: login.php');
+        header('Location: ./login.html');
        
     }
 ?>

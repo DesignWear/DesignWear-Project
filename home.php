@@ -6,7 +6,7 @@
     {
         unset($_SESSION['login']);
         unset($_SESSION['senha']);
-        header('Location: login.php');
+        header('Location: ./login.php');
     }
     $logado = $_SESSION['login'];
     if(!empty($_GET['search']))
@@ -61,13 +61,13 @@
 							width="50">Programador Lucas
 						</a>
 						<a 
-							href="TestRA.html">Use RA
+							href="./TestRA.html">Use RA
 						</a>
 						<a 	
-							href="generic.html">Generic
+							href="./generic.html">Generic
 						</a>
 						<a 
-							href="elements.html">Elements
+							href="./elements.html">Elements
 						</a>
 						
 						
@@ -107,7 +107,7 @@
 						</section>
 				<ul class="icons">
 					<li>
-						<a href="home.php">
+						<a href="./home.php">
 							<img style="position: absolute;
 							left: 35px; 
 							top: 710px;
@@ -115,7 +115,7 @@
 							height: 5%" 
 							src="images/botão HOME.png" />
 						</a>
-						<form action="notas.php" method="POST">
+						<form action="./notas.php" method="POST">
                           
 						  <img style="position: absolute;
 							left: 120px; 
