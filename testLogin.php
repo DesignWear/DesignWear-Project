@@ -31,11 +31,11 @@
             $_SESSION['senha'] = $senha;
             header('Location: ./home.php');
         }
-    }
+    }/*
     else
     {
         // Não acessa
-        header('Location: ./login.html');
+        header('Location: ./login.php');
        
-    }
+    }*/ 
 ?>
