@@ -58,6 +58,16 @@
 		border-spacing: 0;
 	}
 
+
+	div>.login{
+		right: -210px;
+		top: -100px;
+		position: absolute;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		display: inline-flex;	
+	}
 /* Box Model */
 
 	*, *:before, *:after {
@@ -2701,7 +2711,7 @@
 			button,
 			.button {
 				padding: 0;
-				width: 100%;
+				width: 80%;
 			}
 
 		}

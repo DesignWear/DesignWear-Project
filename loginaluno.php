@@ -49,13 +49,16 @@
                             font-weight: 400; 
                             word-wrap: break-word">
                           </div>
-                        <form action="testLoginAluno.php" method="POST">
+                          <div class="login">
+                            <form action="testLoginAluno.php" method="POST">
                           <input type="text" name="login" placeholder="Login">
                           <br>
                           <input type="password" name="senha" placeholder="Senha">
                           <br>
                           <input class="inputSubmit" type="submit" name="submit" value="Enviar">
                         </form>
+                          </div>
+                        
                         </div>
                         </div>
                       </div>
