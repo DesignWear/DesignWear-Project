@@ -37,12 +37,14 @@
                         top: 0px; 
                         position: absolute" src="images/fundo.png" />
 
-          <div style="left: 54px; top: 650px; 
-                        position: absolute; 
-                        flex-direction: column;
-                        justify-content: flex-start; 
-                        align-items: flex-start; 
-                        display: inline-flex">
+          <div style="left: 130px;
+          right: -150px;
+          top: 500px;
+          position: absolute;
+          flex-direction: column;
+          justify-content: flex-start; 
+          align-items: flex-start;
+          display: inline-flex;">
             <div style="width: 76px; 
                             height: 23px; 
                             color: #8F8E8E; 

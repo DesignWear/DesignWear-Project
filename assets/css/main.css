@@ -1995,6 +1995,7 @@
 	input[type="tel"],
 	select,
 	textarea {
+		opacity: 0.7;
 		-moz-appearance: none;
 		-webkit-appearance: none;
 		-ms-appearance: none;
