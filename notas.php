@@ -9,8 +9,32 @@
         header('Location: login.php');
         //
     }
-    $logado = $_SESSION['login'];
+    $login = $_SESSION['login'];
+    $senha = $_SESSION['senha'];
+
+    $sql1 = "SELECT nome FROM aluno WHERE login = '$login' and senha = '$senha'";
+    $sql2 = "SELECT nome FROM professor WHERE login = '$login' and senha = '$senha'";
     
+    $result1 = $conexao->query($sql1);
+    $result2 = $conexao->query($sql2);
+
+    if($result1->num_rows >= 1)
+    {   
+        
+        $row = $result1->fetch_assoc(); 
+        $Nome = $row['nome']; 
+        
+    }
+    if($result2->num_rows >= 1)
+    {
+        
+        $row = $result2->fetch_assoc();
+        $Nome = $row['nome'];
+        
+    }
+    
+
+
     if(!empty($_GET['search']))
     {
         $data = $_GET['search'];
@@ -73,7 +97,7 @@
 			</header>
     <br>
     <?php
-        echo "<h1>Bem vindo <u>$logado</u></h1>";
+        echo "<h1>Bem vindo <u>$Nome</u></h1>";
     ?>
     <br>
         <table class="table text-white table-bg">
