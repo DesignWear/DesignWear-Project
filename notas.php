@@ -53,7 +53,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
     <title>Notas</title>
 </head>
 <body >
@@ -68,9 +68,9 @@
 							
 						</a>
 						<a 
-							href="images/vt2.gif">
+							href="./assets/images/vt2.gif">
 							<img 
-							src="images/vt2.gif" 
+							src="./assets/images/vt2.gif" 
 							alt="Teste de links com imagens" 
 							width="50">Sua conta
 						</a>
@@ -127,16 +127,16 @@
         
         <!-- Scripts -->
 			<script 
-				src="assets/js/jquery.min.js">
+				src="./assets/js/jquery.min.js">
 			</script>
 			<script
-				src="assets/js/skel.min.js">
+				src="./assets/js/skel.min.js">
 			</script>
 			<script 
-				src="assets/js/util.js">
+				src="./assets/js/util.js">
 			</script>
 			<script 
-				src="assets/js/main.js">
+				src="./assets/js/main.js">
 			</script>
 </body>
 </html>
