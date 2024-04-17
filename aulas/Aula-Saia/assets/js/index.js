@@ -8,7 +8,7 @@ const btnBainha = document.querySelector("#btn7");
 const btnDeco = document.querySelector("#btn8");
 
 btnFecho.addEventListener('click', () => {
-    window.open('https://raw.githubusercontent.com/LucasGuerega/RA-TEST/main/assets/images/material/CONTEUDOFECHO/fecho.gif', '_blank');
+    window.location.href='./destination.html';
 });
 btnDeco.addEventListener('click', () => {
     window.open('https://raw.githubusercontent.com/LucasGuerega/RA-TEST/main/assets/images/material/CONTEUDODECORACAO/decora%C3%A7%C3%A3o%202.gif', '_blank');
