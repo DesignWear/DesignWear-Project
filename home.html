@@ -1,27 +1,3 @@
-<?php
-session_start();
-include_once('config.php');
-// print_r($_SESSION);
-if((!isset($_SESSION['login']) == true) and (!isset($_SESSION['senha']) ==
-true))
-{
-unset($_SESSION['login']);
-unset($_SESSION['senha']);
-header('Location: ./login.php');
-}
-$logado = $_SESSION['login'];
-if(!empty($_GET['search']))
-{
-$data = $_GET['search'];
-$sql =
-"SELECT * FROM professor WHERE idprofessor LIKE '%$data%' or nome LIKE '%$data%' or email LIKE '%$data%' or login LIKE '%$data%' ORDER BY idprofessor DESC";
-}
-else
-{
-$sql = "SELECT * FROM professor ORDER BY idprofessor DESC";
-}
-$result = $conexao->query($sql);
-?>
 <!DOCTYPE HTML>
 <!--
 	Projection by TEMPLATED
@@ -90,19 +66,12 @@ $result = $conexao->query($sql);
 						alt="banner" width="400">
 					<img
 						style="position: absolute;
-						left: 20px; 
-						top: 150px;
-						width: 90%; 
-						height: 10%"
-						src="./assets/images/banner Minha Turma.png" />
-					<img
-						style="position: absolute;
 						left: 035px; 
 						top: 250px;
 						width: 90%; 
 						height: 8%"
-						src="./assets/images/banner status aula- Apresentação da peça Aula 1 - Saia.png" 
-						onClick="umClique()"/>
+						src="./assets/images/banner status aula- Apresentação da peça Aula 1 - Saia.png"
+						onClick="umClique()" />
 				</header>
 			</div>
 		</section>

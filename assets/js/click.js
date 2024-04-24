@@ -1,3 +1,3 @@
 function umClique(){
-    window.location = "./Aula-Saia/index.html"
+    window.location = "./aulas/Aula-Saia/index.html"
   }
