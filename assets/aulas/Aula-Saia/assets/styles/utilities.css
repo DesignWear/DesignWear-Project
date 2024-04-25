@@ -1,0 +1,39 @@
+/*Btns*/
+#btnVoltar{
+    width: 300px;
+    height: 300px;
+}
+/*Fecho*/
+#fechoimg {}
+
+#fecholegenda {
+    position: relative;
+    left: 200px;
+}
+
+#fechodica {
+    position: relative;
+    left: 200px;
+    width: 600px;
+    height: 400px;
+}
+
+/*Hovers*/
+#fechodica:hover {
+    animation: transicao 3s linear;
+}
+
+/*Animacoes*/
+@keyframes transicao {
+    0% {
+        opacity: 0%;
+    }
+
+    50% {
+        opacity: 50%
+    }
+
+    100% {
+        opacity: 100%
+    }
+}
