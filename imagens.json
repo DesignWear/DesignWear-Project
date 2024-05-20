@@ -1,0 +1,21 @@
+{
+    "banner": {
+        "url": "./assets/images/banner superior.png",
+        "alt": "banner"
+    },"btnAula1": {
+        "url": "./assets/images/banner status aula- Apresentação da peça Aula 1 - Saia.png",
+        "alt": "Botao aula 1 - saia"
+    },
+    "btnAula2": {
+        "url": "./assets/images/banner status aula- Apresentação da peça Aula 2 - Calça.png",
+        "alt": "Botao aula 2 - calça"
+    },
+    "btnAula3": {
+        "url": "./assets/images/banner status aula- Apresentação da peça Aula 3 - Blusa.png",
+        "alt": "Botao aula 3 - blusa"
+    },
+    "btnAula4": {
+        "url": "./assets/images/banner status aula- Apresentação da peça Aula 4 - Casaco.png",
+        "alt": "Botao aula 4 - casaco"
+    }
+}

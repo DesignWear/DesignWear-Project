@@ -1,25 +1,41 @@
 /*Btns*/
-#btnVoltar{
+#btnVoltar, #btnProximo{
     width: 300px;
     height: 300px;
 }
-/*Fecho*/
-#fechoimg {}
-
-#fecholegenda {
+#btnVoltar{
     position: relative;
-    left: 200px;
+    left: 10%;
+}
+#btnProximo{
+    position: relative;
+    left: 100%;
+}
+/*Fecho*/
+#legenda {
+    position: relative;
+    left: 150px;
 }
 
-#fechodica {
+#imgR{
+    width: 1080px;
+}
+
+#dica {
     position: relative;
     left: 200px;
     width: 600px;
     height: 400px;
 }
 
+.btns{
+    display: flex;
+    position: relative;
+    top: 150px;
+}
+
 /*Hovers*/
-#fechodica:hover {
+#dica:hover {
     animation: transicao 3s linear;
 }
 
