@@ -17,11 +17,11 @@ function volta() {
 }
 /*Botoes nav*/
 function voltP() {
-    document.getElementById("img").src = "./assets/images/material/CONTEUDOPinca/pinca.gif";
+    document.getElementById("imgR").src = "./assets/images/material/CONTEUDOPinca/pinca.gif";
     document.getElementById("legenda").src = "./assets/images/legendas/pinca.png";
 }
 function proxP() {
-    document.getElementById("img").src = "./assets/images/material/CONTEUDOPinca/pincavolumeok.gif";
+    document.getElementById("imgR").src = "./assets/images/material/CONTEUDOPinca/pincavolumeok.gif";
     document.getElementById("legenda").src = "./assets/images/legendas/pinca2.png";
 }
 

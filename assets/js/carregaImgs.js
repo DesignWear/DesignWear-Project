@@ -16,11 +16,13 @@ function carregarImagens() {
 
             document.getElementById('btnAula1').src = imagens.btnAula1.url;
 
-            document.getElementById('btnAula2').src = imagens.btnAula1.url;
+            document.getElementById('btnAula2').src = imagens.btnAula2.url;
 
-            document.getElementById('btnAula3').src = imagens.btnAula1.url;
+            document.getElementById('btnAula3').src = imagens.btnAula3.url;
 
-            document.getElementById('btnAula4').src = imagens.btnAula1.url;
+            document.getElementById('btnAula4').src = imagens.btnAula4.url;
+
+            document.getElementById('btnAula5').src = imagens.btnAula5.url;
         })
         .catch(error => console.error('Erro ao carregar imagens:', error));
 }

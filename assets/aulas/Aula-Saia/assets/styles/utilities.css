@@ -1,55 +1,36 @@
-/*Btns*/
-#btnVoltar, #btnProximo{
-    width: 300px;
-    height: 300px;
-}
-#btnVoltar{
-    position: relative;
-    left: 10%;
-}
-#btnProximo{
-    position: relative;
-    left: 100%;
-}
-/*Fecho*/
-#legenda {
-    position: relative;
-    left: 150px;
+/* Estilos para garantir responsividade e ajuste das imagens */
+img {
+    max-width: 100%;
+    height: auto;
 }
 
-#imgR{
-    width: 1080px;
-}
-
-#dica {
-    position: relative;
-    left: 200px;
-    width: 600px;
-    height: 400px;
-}
-
-.btns{
+/* Estilos para os botões */
+.btns {
     display: flex;
-    position: relative;
-    top: 150px;
+    justify-content: space-between;
+    margin-top: 20px;
 }
 
-/*Hovers*/
+.btns img {
+    max-width: 30%; /* Cada botão ocupa no máximo 48% da largura da tela */
+}
+
+/* Estilos para o efeito de hover na dica */
 #dica:hover {
     animation: transicao 3s linear;
 }
 
-/*Animacoes*/
+/* Animação */
 @keyframes transicao {
     0% {
         opacity: 0%;
     }
-
     50% {
-        opacity: 50%
+        opacity: 50%;
     }
-
     100% {
-        opacity: 100%
+        opacity: 100%;
     }
 }
+
+/* Outras partes do seu CSS ... */
