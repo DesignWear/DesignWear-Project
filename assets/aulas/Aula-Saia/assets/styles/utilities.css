@@ -4,6 +4,20 @@ img {
     height: auto;
 }
 
+a {
+    font-size: 3em;
+}
+
+#legenda {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#dica {
+    width: 65%;
+    margin: 0 auto;
+}
+
 /* Estilos para os botões */
 .btns {
     display: flex;
@@ -12,7 +26,7 @@ img {
 }
 
 .btns img {
-    max-width: 30%; /* Cada botão ocupa no máximo 48% da largura da tela */
+    max-width: 65%;
 }
 
 /* Estilos para o efeito de hover na dica */
@@ -25,9 +39,11 @@ img {
     0% {
         opacity: 0%;
     }
+
     50% {
         opacity: 50%;
     }
+
     100% {
         opacity: 100%;
     }
