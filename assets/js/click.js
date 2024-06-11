@@ -1,12 +1,12 @@
-function aula1() {
-  window.location = "./assets/aulas/Aula-Saia/index.html"
+function criacao() {
+  window.location = "./assets/modulos/Criacao/index.html"
 }
-function aula2() {
-  window.location = "./assets/aulas/Aula-Saia/index.html"
+function modelagem() {
+  window.location = "./assets/modulos/Modelagem/index.html"
 }
 function aula3() {
-  window.location = "./assets/aulas/Aula-Saia/index.html"
+  window.location = "./assets/modulos/Aula-Saia/index.html"
 }
 function aula4() {
-  window.location = "./assets/aulas/Aula-Saia/index.html"
+  window.location = "./assets/modulos/Aula-Saia/index.html"
 }
