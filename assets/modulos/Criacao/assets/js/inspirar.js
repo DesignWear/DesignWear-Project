@@ -1,4 +1,8 @@
-const Pormenor = document.querySelector("#inspire");
-Pormenor.addEventListener('click', () => {
-    window.location.href = './inspirar.html';
+document.addEventListener("DOMContentLoaded", function () {
+    const btnInspire = document.querySelector("#inspire");
+    btnInspire.addEventListener('click', () => {
+        window.location.href = './inspirar.html';
+        console.log("i");
+
+    });
 });
