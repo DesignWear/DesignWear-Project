@@ -1,0 +1,52 @@
+/* Estilos para garantir responsividade e ajuste das imagens */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    font-size: 3em;
+}
+
+#legenda {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#dica {
+    width: 65%;
+    margin: 0 auto;
+}
+
+/* Estilos para os botões */
+.btns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.btns img {
+    max-width: 65%;
+}
+
+/* Estilos para o efeito de hover na dica */
+#dica:hover {
+    animation: transicao 3s linear;
+}
+
+/* Animação */
+@keyframes transicao {
+    0% {
+        opacity: 0%;
+    }
+
+    50% {
+        opacity: 50%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+/* Outras partes do seu CSS ... */
