@@ -1,31 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- para permitir exibição em IOS de acordo com documentação do a-frame-->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- Bibliotecas que precisam ser importadas para usar Mindar com A-frame -->
+    <script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.4/dist/mindar-image.prod.js"></script>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.4/dist/mindar-image-aframe.prod.js"></script>
+    <script src="https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js"></script>
+    <link rel="stylesheet" href="./assets/styles/index.css" />
+    <title>Experiencia RA</title>
 </head>
+
 <body>
-    <style>
-        img {
-            max-width: 100%;
-            display: block;
-            margin-bottom: 10px; 
-        }
-        p{
-            font-size: 1.5em;
-            text-decoration: dotted;
-            text-align: center;
-        }
-    </style>
-    <p>Escolha o marcador que desejás digitalizar</p>
-    <img
-        src="./assets/target/Marcador PORMENOR.png"   
-        onClick="por()"/>
-        <script>
-            function por() {
-                window.location = "./test.html"
-            }
-        </script>
+    <!-- Construir as cenas -->
+    <a-scene mindar-image="imageTargetSrc: ./assets/target/targetP.mind;
+      filterMinCF:0.001;
+      filterBeta: 0.09;
+      uiScanning: #example-scanning-overlay" color-space="sRGB"
+        renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false"
+        device-orientation-permission-ui="enabled: false">
+        <!-- Carregamos os assets que serão usados na experiencia -->
+        <a-assets>
+            <video id="video1" autoplay loop="true" src="./assets/videos/video teste (1).mp4"></video>
+        </a-assets>
+        <a-camera position="0 0 0" look-controls="enabled: false" cursor="fuse: false; rayOrigin: mouse;"
+            raycaster=" far: 10000; objects: .clickable;"></a-camera>
+        <a-entity mindar-image-target="targetIndex: 0">
+            <a-video src="#video1" width="1" height="2" position="0 0 0" scale="1 1 1">
+            </a-video>
+        </a-entity>
+    </a-scene>
 </body>
+
 </html>

@@ -12,8 +12,7 @@
 <body>
   <a-scene mindar-image="imageTargetSrc: ./assets/target/targetP.mind; filterMinCF:0.1; filterBeta: 10"
     color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false"
-    device-orientation-permission-ui="enabled: false"
-    model-viewer="gltfModel: #Model1;">
+    device-orientation-permission-ui="enabled: false" model-viewer="gltfModel: #Model1;">
     >
     <a-assets>
       <a-asset-item id="Model1" src="./assets/Models/Modelo1/scene.gltf" response-type="arraybuffer"
@@ -26,9 +25,9 @@
       <a-gltf-model rotation="270 0 180 " position="0 0 0.1" scale="0.25 0.25 0.25" src="#Model1">
     </a-entity>
   </a-scene>
-<script>
-  onload(alert("Use o marcador do pormenor"));
-</script>
+  <script>
+    onload(alert("Use o marcador do pormenor"));
+  </script>
 </body>
 
 </html>
