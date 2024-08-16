@@ -12,12 +12,25 @@ a {
     width: 50%;
     margin: 0 auto;
 }
-
+#play {
+    width: 25%;
+    height: 25%;
+    margin: 0 auto;
+}
 #dica {
     width: 65%;
     margin: 0 auto;
 }
-
+#imvp{
+    display: flex;
+    max-width: 75%;
+    height: 75%;
+    justify-content: space-between;
+    align-items: center;
+}
+#Video{
+    max-width: 100%;
+}
 /* Estilos para os botões */
 .btns {
     display: flex;

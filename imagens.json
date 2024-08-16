@@ -2,24 +2,9 @@
     "banner": {
         "url": "./assets/images/banner pagina principal.png",
         "alt": "banner"
-    },"btnAula1": {
-        "url": "./assets/images/criação OK.png",
-        "alt": "Botao aula 1"
     },
-    "btnAula2": {
-        "url": "./assets/images/base.png",
-        "alt": "Botao aula 2"
-    },
-    "btnAula3": {
+    "btnModelagem": {
         "url": "./assets/images/MODELAGEM.png",
-        "alt": "Botao aula 3 "
-    },
-    "btnAula4": {
-        "url": "./assets/images/coRTE.png",
-        "alt": "Botao aula 4"
-    },
-    "btnAula5": {
-        "url": "./assets/images/cONFEÇÃO.png",
-        "alt": "Botao aula 5"
+        "alt": "Botao Modelagem "
     }
 }

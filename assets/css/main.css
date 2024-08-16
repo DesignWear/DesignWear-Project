@@ -1687,11 +1687,7 @@ body {
 
 }
 
-#btnAula1,
-#btnAula2,
-#btnAula3,
-#btnAula4,
-#btnAula5 {
+#btnModelagem {
 	max-width: 100%;
 	height: auto;
 }
@@ -1804,6 +1800,14 @@ i {
 p {
 	margin: 0 0 2em 0;
 }
+
+span#homeText {
+	display: grid;
+	justify-content: space-around;
+	color: #6c58bb;
+	font-size: 27px;
+}
+
 
 h1,
 h2,
@@ -2022,11 +2026,11 @@ article.wrapper article header {
 
 }
 
-header p {
+/*header p {
 	color: #000000;
 	position: relative;
 	margin: 0 0 1.5em 0;
-}
+}*/
 
 
 header h2+p {

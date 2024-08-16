@@ -1,17 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
-    //const btnInspire = document.querySelector("#inspire");
     const btnCintura = document.querySelector("#btn1");
     const btnFecho = document.querySelector("#btn2");
     const btnPinca = document.querySelector("#btn3");
     const btnComprimento = document.querySelector("#btn4");
     const btnAmplitude = document.querySelector("#btn5");
     const btnBainha = document.querySelector("#btn6");
+    const btnInpirese = document.querySelector("#btn7");
 
-
-    /*btnInspire.addEventListener('click', () => {
-        window.location.href = './inspirar.html';
-        console.log("i");
-    });*/
     btnCintura.addEventListener('click', () => {
         window.location.href = './cintura.html';
         console.log("0");
@@ -40,6 +35,12 @@ document.addEventListener("DOMContentLoaded", function () {
     btnBainha.addEventListener('click', () => {
         window.location.href = './bainha.html';
         console.log("5");
+
+    });
+
+    btnInpirese.addEventListener('click', () => {
+        window.location.href = './inspirar.html';
+        console.log("6");
 
     });
 });

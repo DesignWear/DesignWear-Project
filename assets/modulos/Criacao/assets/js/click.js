@@ -63,3 +63,15 @@ function proxB() {
 }
 
 document.addEventListener('DOMContentLoaded', checkButtons);
+
+function amplitudeVideo() {
+    window.location.href = './amplitudeVideo.html';
+};
+
+function comprimentoVideo() {
+    window.location.href = './comprimentoVideo.html';
+};
+
+function cinturaVideo() {
+    window.location.href = './cinturaVideo.html';
+};

@@ -33,10 +33,7 @@
       <img id="btn_comprimento" src="./assets/images/bntRA/comprimento.png" />
       <img id="btn_fecho" src="./assets/images/bntRA/fecho.png" />
       <img id="btn_pinca" src="./assets/images/bntRA/pinca.png" />
-
-      <!--<img id="marcador2" src="./assets/target/Marcador inspire-se.png" />-->
-
-      <video id="pormenor" autoplay loop="true" src="./assets/images/material/CONTEUDODECORACAO/decoracao.mp4"></video>
+      <img id="btn_inpirese" src="./assets/images/bntRA/inspirese.png" />
     </a-assets>
     <a-camera position="0 0 0" look-controls="enabled: false" cursor="fuse: false; rayOrigin: mouse;"
       raycaster=" far: 10000; objects: .clickable;"></a-camera>
@@ -65,14 +62,11 @@
 
       <a-image id="btn6" class="clickable" position="0.15 -0.6 -0.04426" height="0.15" width="0.15" src="#btn_bainha"
         material geometry scale="3.5 1 1">
+      </a-image>
+
+      <a-image id="btn7" class="clickable" position="0.20 -0.8 -0.04426" height="0.15" width="0.15" src="#btn_inpirese"
+        material geometry scale="4.4 1 1.09">
       </a-image> </a-entity>
-
-    <a-entity mindar-image-target="targetIndex: 2">
-
-      <a-video src="#pormenor" width="1" height="1" position="0 0 0" scale="1 1 1">
-      </a-video>
-
-    </a-entity>
 
   </a-scene>
 
