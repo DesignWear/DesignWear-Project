@@ -4,7 +4,7 @@
 Uma breve descrição sobre o que esse projeto faz e para quem ele é
 
 
-![Logo](./assets/images/logo.png)
+![Logo](https://github.com/DesignWear/DesignWear-Project/blob/main/assets/images/banner%20pagina%20principal.png)
 
 
 ## Referência

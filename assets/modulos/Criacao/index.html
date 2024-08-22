@@ -18,7 +18,7 @@
 
 <body>
   <!-- Construir as cenas -->
-  <a-scene mindar-image="imageTargetSrc: ./assets/target/targets.mind;
+  <a-scene mindar-image="imageTargetSrc: ./assets/target/saia3D.mind;
       filterMinCF:0.001;
       filterBeta: 0.09;
       uiScanning: #example-scanning-overlay" color-space="sRGB"
@@ -42,8 +42,10 @@
     </a-assets>
     <a-camera position="0 0 0" look-controls="enabled: false" cursor="fuse: false; rayOrigin: mouse;"
       raycaster=" far: 10000; objects: .clickable;"></a-camera>
-
-    <a-entity mindar-image-target="targetIndex: 0">
+  <a-entity mindar-image-target="targetIndex: 0">
+      <a-gltf-model rotation="270 0 180 " position="0 0 -1" scale="1.25 1.25 1.25" src="#Model1">
+    </a-entity>
+    <a-entity mindar-image-target="targetIndex: 1">
       <!-- Botoes normais -->
       <a-image id="btn1" class="clickable" position="0.2 0.4 -0.04426" height="0.15" width="0.15" src="#btn_cintura"
         material geometry scale="4 1 1">
@@ -74,9 +76,7 @@
       </a-image>
     </a-entity>
 
-    <a-entity mindar-image-target="targetIndex: 1">
-      <a-gltf-model rotation="270 0 180 " position="0 0 -1" scale="1.25 1.25 1.25" src="#Model1">
-    </a-entity>
+  
 
   </a-scene>
 
