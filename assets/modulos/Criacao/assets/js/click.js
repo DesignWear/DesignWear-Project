@@ -64,6 +64,10 @@ function proxB() {
 
 document.addEventListener('DOMContentLoaded', checkButtons);
 
+function saia3D(){
+    window.location.href = './saia3D.html';
+}
+
 function amplitudeVideo() {
     window.location.href = './amplitudeVideo.html';
 };
