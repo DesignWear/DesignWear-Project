@@ -18,7 +18,7 @@
 
 <body>
   <!-- Construir as cenas -->
-  <a-scene mindar-image="imageTargetSrc: ./assets/target/bla.mind;
+  <a-scene mindar-image="imageTargetSrc: ./assets/target/targets.mind;
       filterMinCF:0.001;
       filterBeta: 0.09;
       uiScanning: #example-scanning-overlay" color-space="sRGB"
@@ -34,6 +34,11 @@
       <img id="btn_fecho" src="./assets/images/bntRA/fecho.png" />
       <img id="btn_pinca" src="./assets/images/bntRA/pinca.png" />
       <img id="btn_inpirese" src="./assets/images/bntRA/inspirese.png" />
+
+      <a-asset-item 
+        id="Model1" src="./assets/Models/Modelo1/Saia simples.gltf" response-type="arraybuffer"crossorigin="anonymous">
+      </a-asset-item>
+
     </a-assets>
     <a-camera position="0 0 0" look-controls="enabled: false" cursor="fuse: false; rayOrigin: mouse;"
       raycaster=" far: 10000; objects: .clickable;"></a-camera>
@@ -66,7 +71,12 @@
 
       <a-image id="btn7" class="clickable" position="0.20 -0.8 -0.04426" height="0.15" width="0.15" src="#btn_inpirese"
         material geometry scale="4.4 1 1.09">
-      </a-image> </a-entity>
+      </a-image>
+    </a-entity>
+
+    <a-entity mindar-image-target="targetIndex: 1">
+      <a-gltf-model rotation="270 0 180 " position="0 0 -1" scale="1.25 1.25 1.25" src="#Model1">
+    </a-entity>
 
   </a-scene>
 
